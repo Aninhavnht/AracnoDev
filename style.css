@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right,#00010D,#2E1D40);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  box-shadow: 0 0 10px #9c27b0, 0 0 20px #9c27b0, 0 0 30px #9c27b0;
+  border: 2px solid #9c27b0;
+}
+
+
+.imagem-topo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagem-pixel {
+  width: 100px;
+  height: auto;
+}
+
+.conteudo-inferior {
+  text-align: center;
+  
+ 
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+button {
+  padding: 14px 40px;
+  background: linear-gradient(to right, #00010D);
+  border: none;
+  border-radius: 10px;
+  color: rgba(211, 0, 200, 0.808);
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Estilo das informações do curso */
+.informacoes-curso {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+/* ... código anterior ... */
+
+.conteudo-inferior {
+  text-align: center;
+  color: rgb(220, 0, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.informacoes-curso {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgb(220, 0, 240);
+  line-height: 1.5;
+}
+.neon-text {
+  color: #9c27b0; /* Roxo vibrante */
+  text-shadow:
+    0 0 5px #460b50,
+    0 0 10px #9c27b0,
+    0 0 20px #c158dc;
+  font-weight: bold;
+}
+
+
+
+.marca-dagua {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  pointer-events: none;
+  user-select: none;
+}
+/* Barra preta superior */
+.top-bar {
+  background-color: #3b0944;
+  color: white;
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  font-size: 18px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+}
+
+.top-bar a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.top-bar a:hover {
+  color: #8a2be2; /* roxo neon ao passar o mouse */
+}
+@keyframes pulsar {
+  0% {
+    box-shadow: 0 0 0px #9b59b6;
+  }
+  50% {
+    box-shadow: 0 0 20px #9b59b6, 0 0 30px #9b59b6;
+  }
+  100% {
+    box-shadow: 0 0 0px #9b59b6;
+  }
+}
+
+.botao-animado {
+  animation: pulsar 1s ease-in-out;
+}

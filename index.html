@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AracnoDev</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+</head>
+<body>
+  <div class="top-bar">
+  <a href="https://instagram.com/anaa_vnht" target="_blank" title="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="anaclaravinhote@gmail.com" title="Enviar mensagem">
+    <i class="fas fa-envelope"></i>
+  </a>
+  <a href="https://github.com/seu_usuario" target="_blank" title="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+  <div class="container">
+    <div class="card">
+      <div class="imagem-topo">
+        <img src="https://i.ibb.co/bwjxnrQ/spiderweb.png" alt="Aranha Pixel" class="imagem-pixel" >
+      </div>
+      <div class="conteudo-inferior">
+        <h1><span class="neon-text">AracnoDev</span></h1>
+
+        <p>Plataforma de Estudos Online em Programação</p>
+        <a href="http://localhost/sistema_notas/index.php">
+        <button id="sistema_notas/index.php">Lista de Chamada</button>
+        </a>
+        <div class="informacoes-curso">
+          <p>Curso: Desenvolvimento Front-end com HTML, CSS e JavaScript</p>
+          <p>Turma: WebTeia 2025 | Período: Março – Julho</p>
+         
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <footer class="marca-dagua">
+  Desenvolvido por AnaClara © AracnoDev <sup>®</sup>
+</footer>
+<script>
+  const botao = document.getElementById("sistema_notas/index.php");
+
+  botao.addEventListener("click", () => {
+    // Adiciona a classe de animação
+    botao.classList.add("botao-animado");
+
+    // Remove a classe depois de 1s para permitir reutilização
+    setTimeout(() => {
+      botao.classList.remove("botao-animado");
+    }, 1000);
+  });
+</script>
+
+
+</body>
+</html>
